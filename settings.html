@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Discord Announcement Tracker</title>
+    <meta name="description" content="Customize your Discord tracking preferences, notification settings, and account details">
+    <meta name="keywords" content="discord settings, notification preferences, tracking configuration, discord tracker">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100">
+    <header class="bg-indigo-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <a href="/generated-website-1734553502405/home.html" class="text-xl font-bold">DiscordTrack</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1734553502405/announcements.html" class="hover:text-indigo-200">Announcements</a>
+                    <a href="/generated-website-1734553502405/servers.html" class="hover:text-indigo-200">Servers</a>
+                    <a href="/generated-website-1734553502405/mentions.html" class="hover:text-indigo-200">Mentions</a>
+                    <a href="/generated-website-1734553502405/settings.html" class="hover:text-indigo-200 font-bold">Settings</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-2xl font-bold mb-6">Settings</h1>
+            
+            <div class="space-y-6">
+                <section class="border-b pb-6">
+                    <h2 class="text-xl font-semibold mb-4">Notification Preferences</h2>
+                    <form method="GET" action="/generated-website-1734553502405/settings/notifications" class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700">Email Notifications</label>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="email_notifications" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700">Desktop Notifications</label>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="desktop_notifications" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                            </label>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="border-b pb-6">
+                    <h2 class="text-xl font-semibold mb-4">Tracking Settings</h2>
+                    <form method="GET" action="/generated-website-1734553502405/settings/tracking" class="space-y-4">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-gray-700">Update Frequency</label>
+                            <select name="update_frequency" class="p-2 border rounded">
+                                <option value="realtime">Real-time</option>
+                                <option value="5min">Every 5 minutes</option>
+                                <option value="15min">Every 15 minutes</option>
+                                <option value="1hour">Hourly</option>
+                            </select>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-gray-700">History Retention</label>
+                            <select name="history_retention" class="p-2 border rounded">
+                                <option value="7days">7 days</option>
+                                <option value="30days">30 days</option>
+                                <option value="90days">90 days</option>
+                                <option value="unlimited">Unlimited</option>
+                            </select>
+                        </div>
+                    </form>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-4">Account Settings</h2>
+                    <form method="GET" action="/generated-website-1734553502405/settings/account" class="space-y-4">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-gray-700">Email Address</label>
+                            <input type="email" name="email" value="user@example.com" class="p-2 border rounded">
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-gray-700">Time Zone</label>
+                            <select name="timezone" class="p-2 border rounded">
+                                <option value="UTC">UTC</option>
+                                <option value="EST">Eastern Time</option>
+                                <option value="PST">Pacific Time</option>
+                                <option value="GMT">GMT</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">
+                            Save Changes
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 DiscordTrack. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1734553502405/about.html" class="hover:text-gray-300">About</a>
+                    <a href="/generated-website-1734553502405/privacy.html" class="hover:text-gray-300">Privacy</a>
+                    <a href="/generated-website-1734553502405/terms.html" class="hover:text-gray-300">Terms</a>
+                    <a href="/generated-website-1734553502405/contact.html" class="hover:text-gray-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

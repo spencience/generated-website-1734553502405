@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DiscordTrack</title>
+    <meta name="description" content="Get in touch with the DiscordTrack team for support, feedback, or partnership inquiries. We're here to help you track Discord announcements better.">
+    <meta name="keywords" content="discord tracker contact, discord support, discord announcement help">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100">
+    <header class="bg-indigo-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <a href="/generated-website-1734553502405/home.html" class="text-xl font-bold">DiscordTrack</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1734553502405/announcements.html" class="hover:text-indigo-200">Announcements</a>
+                    <a href="/generated-website-1734553502405/servers.html" class="hover:text-indigo-200">Servers</a>
+                    <a href="/generated-website-1734553502405/mentions.html" class="hover:text-indigo-200">Mentions</a>
+                    <a href="/generated-website-1734553502405/settings.html" class="hover:text-indigo-200">Settings</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-2xl font-bold mb-6">Contact Us</h1>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <form method="GET" action="/generated-website-1734553502405/contact/submit" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <select id="subject" name="subject" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border">
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="border-l-4 border-indigo-600 pl-4">
+                        <h2 class="text-xl font-semibold">Quick Support</h2>
+                        <p class="text-gray-600 mt-2">For immediate assistance, check our <a href="/generated-website-1734553502405/faq.html" class="text-indigo-600 hover:text-indigo-800">FAQ section</a> or join our support server.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-indigo-600 pl-4">
+                        <h2 class="text-xl font-semibold">Business Hours</h2>
+                        <p class="text-gray-600 mt-2">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                        <p class="text-gray-600">Response Time: Within 24 hours</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-indigo-600 pl-4">
+                        <h2 class="text-xl font-semibold">Other Ways to Connect</h2>
+                        <div class="mt-2 space-y-2">
+                            <a href="/generated-website-1734553502405/discord.html" class="block text-indigo-600 hover:text-indigo-800">Join our Discord Server</a>
+                            <a href="/generated-website-1734553502405/twitter.html" class="block text-indigo-600 hover:text-indigo-800">Follow us on Twitter</a>
+                            <a href="/generated-website-1734553502405/github.html" class="block text-indigo-600 hover:text-indigo-800">GitHub Issues</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 DiscordTrack. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1734553502405/about.html" class="hover:text-gray-300">About</a>
+                    <a href="/generated-website-1734553502405/privacy.html" class="hover:text-gray-300">Privacy</a>
+                    <a href="/generated-website-1734553502405/terms.html" class="hover:text-gray-300">Terms</a>
+                    <a href="/generated-website-1734553502405/contact.html" class="hover:text-gray-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
